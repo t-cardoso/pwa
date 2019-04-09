@@ -1,4 +1,3 @@
-
 // Cache on install
 var staticCacheName = 'teste_tc_af_2019_02_16_20_13'
 this.addEventListener("install", event => {
