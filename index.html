@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Teste PWA">
+	<meta name="author" content="Alfama Web">
+	<meta name="theme-color" content="#4267b2">
+	<link rel="manifest" href="/pwa/manifest.json">
+
+	<title>Teste</title>
+
+	<script>
+		if('serviceWorker' in navigator) {
+		  navigator.serviceWorker
+		           .register('/pwa/sw.js')
+		           .then(function() { console.log("Service Worker Registrado"); });
+		}
+
+		if ('serviceWorker' in navigator) {
+		    navigator.serviceWorker.register('pwa/sw.js')
+		      .then(function () {
+		        console.log('service worker registrado');
+		      })
+		      .catch(function () {
+		        console.warn('service worker falhou');
+		      });
+		  }
+	</script>
+
+</head>
+	<body>
+	<h1>Teste PWA</h1>
+
+	</body>
+</html>
